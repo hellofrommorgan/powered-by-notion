@@ -9,8 +9,6 @@ import { NotionRenderer } from 'react-notion-x'
 import { ExtendedRecordMap } from 'notion-types'
 import { getPageTitle } from 'notion-utils'
 
-import { Loading } from './Loading'
-
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
@@ -51,10 +49,6 @@ export const NotionPage = ({
   rootDomain?: string
 }) => {
   const router = useRouter()
-
-  if (router.isFallback) {
-    return <Loading />
-  }
 
   if (!recordMap) {
     return null
