@@ -8,6 +8,9 @@ import { useRouter } from 'next/router'
 import { NotionRenderer } from 'react-notion-x'
 import { ExtendedRecordMap } from 'notion-types'
 import { getPageTitle } from 'notion-utils'
+import { Tweet, TwitterContextProvider } from 'react-static-tweets'
+
+import { Loading } from './Loading'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -50,6 +53,10 @@ export const NotionPage = ({
 }) => {
   const router = useRouter()
 
+  if (router.isFallback) {
+    return <Loading />
+  }
+
   if (!recordMap) {
     return null
   }
@@ -66,11 +73,43 @@ export const NotionPage = ({
     g.block = block
   }
 
+  const socialDescription = 'React Notion X Demo'
+  const socialImage =
+    'https://react-notion-x-demo.transitivebullsh.it/social.jpg'
+
   return (
-    <>
+    <TwitterContextProvider
+      value={{
+        tweetAstMap: (recordMap as any).tweetAstMap || {},
+        swrOptions: {
+          fetcher: (id: string) =>
+            fetch(`/api/get-tweet-ast/${id}`).then((r) => r.json())
+        }
+      }}
+    >
       <Head>
+        {socialDescription && (
+          <>
+            <meta name='description' content={socialDescription} />
+            <meta property='og:description' content={socialDescription} />
+            <meta name='twitter:description' content={socialDescription} />
+          </>
+        )}
+
+        {socialImage ? (
+          <>
+            <meta name='twitter:card' content='summary_large_image' />
+            <meta name='twitter:image' content={socialImage} />
+            <meta property='og:image' content={socialImage} />
+          </>
+        ) : (
+          <meta name='twitter:card' content='summary' />
+        )}
+
         <title>{title}</title>
         <meta property='og:title' content={title} />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:creator' content='@transitive_bs' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
@@ -88,12 +127,13 @@ export const NotionPage = ({
           Collection,
           Equation,
           Pdf,
-          Modal
+          Modal,
+          Tweet
         }}
 
         // NOTE: custom images will only take effect if previewImages is true and
         // if the image has a valid preview image defined in recordMap.preview_images[src]
       />
-    </>
+    </TwitterContextProvider>
   )
 }
