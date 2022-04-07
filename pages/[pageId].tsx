@@ -45,7 +45,7 @@ export async function getStaticPaths() {
     rootNotionSpaceId,
     notion.getPage,
     {
-      traverseCollections: false
+      traverseCollections: true
     }
   )
 
