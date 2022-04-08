@@ -458,7 +458,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*":
+"@types/node@*", "@types/node@^17.0.23":
   version "17.0.23"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
   integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
@@ -468,25 +468,20 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
-"@types/node@^16.11.2":
-  version "16.11.26"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.26.tgz#63d204d136c9916fb4dcd1b50f9740fe86884e47"
-  integrity sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==
-
 "@types/parse5@^5.0.0":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@types/parse5/-/parse5-5.0.3.tgz#e7b5aebbac150f8b5fdd4a46e7f0bd8e65e19109"
   integrity sha512-kUNnecmtkunAoQ3CnjmMkzNU/gtxG8guhi+Fk2U/kOpIKjIMKnXGp4IJCgQJrXSgMsWYimYG4TGjz/UzbGEBTw==
 
 "@types/prop-types@*":
-  version "15.7.4"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
-  integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
+  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/react@^17.0.43":
-  version "17.0.43"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.43.tgz#4adc142887dd4a2601ce730bc56c3436fdb07a55"
-  integrity sha512-8Q+LNpdxf057brvPu1lMtC5Vn7J119xrP1aq4qiaefNioQUYANF/CYeK4NsKorSZyUGJ66g0IM+4bbjwx45o2A==
+"@types/react@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.0.tgz#4be8aa3a2d04afc3ac2cc1ca43d39b0bd412890c"
+  integrity sha512-7+K7zEQYu7NzOwQGLR91KwWXXDzmTFODRVizJyIALf6RfLv2GDpqpknX64pvRVILXCpXi7O/pua8NGk44dLvJw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -724,9 +719,9 @@ cacheable-request@^7.0.2:
     responselike "^2.0.0"
 
 caniuse-lite@^1.0.30001283:
-  version "1.0.30001325"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001325.tgz#2b4ad19b77aa36f61f2eaf72e636d7481d55e606"
-  integrity sha512-sB1bZHjseSjDtijV1Hb7PB2Zd58Kyx+n/9EotvZ4Qcz2K3d0lWB8dB4nb8wN/TsOGFq3UuAm0zQZNQ4SoR7TrQ==
+  version "1.0.30001327"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001327.tgz#c1546d7d7bb66506f0ccdad6a7d07fc6d668c858"
+  integrity sha512-1/Cg4jlD9qjZzhbzkzEaAC2JHsP0WrOc8Rd/3a3LuajGzGWR/hD7TVyvq99VqmTy99eVh8Zkmdq213OgvgXx7w==
 
 chalk@^4.1.0:
   version "4.1.2"
@@ -1575,9 +1570,9 @@ lru-cache@5.1.1:
     yallist "^3.0.2"
 
 lru-cache@^7.4.0:
-  version "7.7.3"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
-  integrity sha512-WY9wjJNQt9+PZilnLbuFKM+SwDull9+6IAguOrarOMoOHTcJ9GnXSO11+Gw6c7xtDkBkthR57OZMtZKYr+1CEw==
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.0.tgz#649aaeb294a56297b5cbc5d70f198dcc5ebe5747"
+  integrity sha512-AmXqneQZL3KZMIgBpaPTeI6pfwh+xQ2vutMsyqOu1TBdEXFZgpG/80wuJ531w2ZN7TI0/oc8CPxzh/DKQudZqg==
 
 make-cancellable-promise@^1.0.0:
   version "1.1.0"
@@ -1808,22 +1803,22 @@ normalize-url@^7.0.3:
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
 notion-client@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.7.0.tgz#0123817bcc7aaa7c627ad61155b987b6e9a0db7c"
-  integrity sha512-8ATDfYU1p8wD9MvHe7+A0QjkSipol8vAlbonkmyPVJtnFrCniFFuaAjiCbzOrao3O7XVeUyjSbEgbDNayLu4/Q==
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.8.3.tgz#855f999fdddd0c69940b96ecf4045557bfdcecc1"
+  integrity sha512-o6ZJxn3N/cGqwxV9+3BY4cEIFsyb6zBbI5/GT2Xtj6+ZL7hBCK7OuJhOOhz3WyhIepQDUCt4z/YNwvWTdiBDyA==
   dependencies:
     got "^11.8.1"
     notion-types "^6.7.0"
-    notion-utils "^6.7.0"
+    notion-utils "^6.8.3"
     p-map "^5.3.0"
 
 notion-compat@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/notion-compat/-/notion-compat-6.7.0.tgz#c77d2d54cee5b807c84589a60f5e3cdf9138b917"
-  integrity sha512-a75j8KGLDEb20viEmWg5vEXiMfqWUhd1jPPybKBlmxtrCuw3ZBNy91RxSP/tTZ74F26LQvmzhBqE/tDzMvIvmQ==
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/notion-compat/-/notion-compat-6.8.3.tgz#17cfc0dffea95d2ab54f280d52c070eafec115de"
+  integrity sha512-GV6Q8poUl4YjVQTsD4jJEITGoEbQQrbEKkf+lxjZ5ECAqhQ7qXmXWAPDIlFHyTJ/mpoNx6n8Zw8wY/+t3nTeag==
   dependencies:
     notion-types "^6.7.0"
-    notion-utils "^6.7.0"
+    notion-utils "^6.8.3"
     p-queue "^7.2.0"
 
 notion-types@^6.7.0:
@@ -1831,10 +1826,10 @@ notion-types@^6.7.0:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.7.0.tgz#f5ccb8ef701389b2bf52e5561bd31bc60c49ccdf"
   integrity sha512-j7O6juQDOPgAinELMMpvVn0c8Vgr+Dhqm7UTTnhILnBhbOtQKaIYPCNKA4AJw/OPzzy1iEJ6KrthTEkPbQYEeg==
 
-notion-utils@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.7.0.tgz#f94669447ec62dd0c3477410643c542629e49939"
-  integrity sha512-wIBFkZK46QigaflnwrebRfZgFPATpg8IDF8xhpsx0vkNaqaPQqA90PruERV/fCnV35xKo8UFZKHuKLzTB1UYXQ==
+notion-utils@^6.7.0, notion-utils@^6.8.3:
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.8.3.tgz#efc5973722517efa3e8cc915978996d689d84663"
+  integrity sha512-Nwqw19txK8WTHT5BhJLJ9BCqRkz7b1LdbCR3LeQuIhfs2zOHd56gWENT6jh5mmKrQn3PlinVjWo2pl3HwGKd3A==
   dependencies:
     is-url-superb "^6.1.0"
     mem "^9.0.2"
@@ -2051,14 +2046,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
-  integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
+react-dom@^18.0.0:
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0.tgz#26b88534f8f1dbb80853e1eabe752f24100d8023"
+  integrity sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    scheduler "^0.20.2"
+    scheduler "^0.21.0"
 
 react-fast-compare@^3.2.0:
   version "3.2.0"
@@ -2114,16 +2108,16 @@ react-modal@^3.14.3:
     warning "^4.0.3"
 
 react-notion-x@^6.7.3:
-  version "6.7.3"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.7.3.tgz#e32055654f6efbac23b74faca6f74609916cc64e"
-  integrity sha512-AU+16pUWHe8NKiIWygVO/2KNyxKKQTGzbluUAwqVQHgXzr9xuiZT4H8E/Ph7RRY/q/LjFPp3SeDRtc2ZvsuHnA==
+  version "6.8.4"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.8.4.tgz#5ef6ae3ac4ee5cd320fbcca7cd2e1f6aa47c1123"
+  integrity sha512-a3C2mApZrfUuoqjfM6xfSYL5dsHlgOp6smcfgFLHYDbdmg/XBih2/hBgw1CGhKcRa7L5EBVbwuOUkA0z2GDpLg==
   dependencies:
     "@matejmazur/react-katex" "^3.1.3"
     "@radix-ui/react-dropdown-menu" "^0.1.6"
     katex "^0.13.18"
     medium-zoom "^1.0.6"
     notion-types "^6.7.0"
-    notion-utils "^6.7.0"
+    notion-utils "^6.8.3"
     prismjs "^1.27.0"
     react-fast-compare "^3.2.0"
     react-hotkeys-hook "^3.0.3"
@@ -2210,13 +2204,12 @@ react-use@^17.3.1:
     ts-easing "^0.2.0"
     tslib "^2.1.0"
 
-react@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
-  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
+react@^18.0.0:
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0.tgz#b468736d1f4a5891f38585ba8e8fb29f91c3cb96"
+  integrity sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 readable-stream@^2.0.6:
   version "2.3.7"
@@ -2334,13 +2327,12 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-scheduler@^0.20.2:
-  version "0.20.2"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
-  integrity sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
+scheduler@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0.tgz#6fd2532ff5a6d877b6edb12f00d8ab7e8f308820"
+  integrity sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 schema-utils@^3.0.0:
   version "3.1.1"
