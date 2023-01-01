@@ -1,10 +1,15 @@
 import { Client } from '@notionhq/client'
-import { NotionAPI } from 'notion-client'
 import { NotionCompatAPI } from 'notion-compat'
+import { NotionAPI } from 'notion-client'
 import { ExtendedRecordMap, SearchParams, SearchResults } from 'notion-types'
 
-import { previewImagesEnabled, useOfficialNotionAPI } from './config'
 import { getPreviewImageMap } from './preview-images'
+import { getTweetAstMap } from './tweet-embeds'
+import {
+  useOfficialNotionAPI,
+  previewImagesEnabled,
+  tweetEmbedsEnabled
+} from './config'
 
 const notion = useOfficialNotionAPI
   ? new NotionCompatAPI(new Client({ auth: process.env.NOTION_TOKEN }))
@@ -22,6 +27,11 @@ export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
   if (previewImagesEnabled) {
     const previewImageMap = await getPreviewImageMap(recordMap)
     ;(recordMap as any).preview_images = previewImageMap
+  }
+
+  if (tweetEmbedsEnabled) {
+    const tweetAstMap = await getTweetAstMap(recordMap)
+    ;(recordMap as any).tweetAstMap = tweetAstMap
   }
 
   return recordMap

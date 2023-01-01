@@ -1,10 +1,11 @@
 import got from 'got'
 import lqip from 'lqip-modern'
-import { ExtendedRecordMap, PreviewImage, PreviewImageMap } from 'notion-types'
-import { getPageImageUrls } from 'notion-utils'
 import pMap from 'p-map'
 import pMemoize from 'p-memoize'
+
+import { ExtendedRecordMap, PreviewImage, PreviewImageMap } from 'notion-types'
 import { defaultMapImageUrl } from 'react-notion-x'
+import { getPageImageUrls } from 'notion-utils'
 
 // NOTE: this is just an example of how to pre-compute preview images.
 // Depending on how many images you're working with, this can potentially be
@@ -32,7 +33,7 @@ async function createPreviewImage(url: string): Promise<PreviewImage | null> {
   try {
     const { body } = await got(url, { responseType: 'buffer' })
     const result = await lqip(body)
-    console.log('lqip', { originalUrl: url, ...result.metadata })
+    console.log('lqip', result.metadata)
 
     return {
       originalWidth: result.metadata.originalWidth,
@@ -40,10 +41,6 @@ async function createPreviewImage(url: string): Promise<PreviewImage | null> {
       dataURIBase64: result.metadata.dataURIBase64
     }
   } catch (err) {
-    if (err.message === 'Input buffer contains unsupported image format') {
-      return null
-    }
-
     console.warn('failed to create preview image', url, err.message)
     return null
   }
