@@ -14,8 +14,16 @@ import 'react-notion-x/build/third-party/equation.css'
 // used for tweet embeds (optional)
 import 'react-static-tweets/styles.css'
 
+// used for Vercel analytics
+import { Analytics } from '@vercel/analytics/react';
+
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
 }
 
 export default MyApp
