@@ -1,18 +1,13 @@
-import React from 'react'
+import * as React from 'react'
 
-import '../styles/globals.css'
-
+// used for rendering equations (optional)
+import 'katex/dist/katex.min.css'
+// used for code syntax highlighting (optional)
+import 'prismjs/themes/prism-tomorrow.css'
 // core styles shared by all of react-notion-x (required)
 import 'react-notion-x/src/styles.css'
 
-// used for code syntax highlighting (optional)
-import 'prismjs/themes/prism-tomorrow.css'
-
-// used for rendering equations (optional)
-import 'react-notion-x/build/third-party/equation.css'
-
-// used for tweet embeds (optional)
-import 'react-static-tweets/styles.css'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
