@@ -330,6 +330,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^0.1.6":
+  version: 0.1.6
+  resolution: "@vercel/analytics@npm:0.1.6"
+  peerDependencies:
+    react: ^16.8||^17||^18
+  checksum: 4428e27778cac2ddb1b55fb2e499e04cbe7ddb76dac4fbcbc1e992729da03166807f72c28664ab0addad7223217baef55b5b7b5210a25967c3652b6b2c07d0be
+  languageName: node
+  linkType: hard
+
 "@xobotyi/scrollbar-width@npm:^1.9.5":
   version: 1.9.5
   resolution: "@xobotyi/scrollbar-width@npm:1.9.5"
@@ -2110,6 +2119,7 @@ __metadata:
     "@notionhq/client": ^1.0.4
     "@types/node": ^16.11.2
     "@types/react": ^18.0.26
+    "@vercel/analytics": ^0.1.6
     classnames: ^2.3.1
     cross-env: ^7.0.3
     got: ^12.0.2
