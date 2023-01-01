@@ -48,3 +48,6 @@ Note that custom images will only be enabled if either the image has a valid pre
 MIT © [Travis Fischer](https://transitivebullsh.it)
 
 Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
+=======
+Boop!
+>>>>>>> parent of 1bafb18 (Update README.md)
