@@ -1,8 +1,6 @@
 // TODO: change these to your own values
 // NOTE: rootNotionSpaceId is optional; set it to undefined if you don't want to
 // use it.
-//
-
 export const rootNotionPageId = '87539e0219014b3993b9438395011d90'
 export const rootNotionSpaceId = ''
 
@@ -11,16 +9,13 @@ export const rootNotionSpaceId = ''
 // you cache the preview image results in a key-value database.
 export const previewImagesEnabled = true
 
-// whether we should enable static tweet embeds (requires fetching extra info at
-// build time)
-export const tweetEmbedsEnabled = true
-
 // Whether to use the official public Notion API or the unofficial private API.
 // Note that the official API doesn't expose formatting options for many blocks
 // and is currently not as well-supported.
 // If you want to use the official API, you must provide a NOTION_TOKEN env var.
 export const useOfficialNotionAPI =
-  false || (process.env.USE_OFFICIAL_NOTION_API && process.env.NOTION_TOKEN)
+  false ||
+  (process.env.USE_OFFICIAL_NOTION_API === 'true' && process.env.NOTION_TOKEN)
 
 export const isDev =
   process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
