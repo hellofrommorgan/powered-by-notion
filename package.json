@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^1.0.4",
+    "@vercel/analytics": "^0.1.6",
     "classnames": "^2.3.1",
     "got": "^12.0.2",
     "lqip-modern": "^1.2.0",
@@ -31,7 +32,8 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.0",
     "@types/node": "^16.11.2",
+    "@types/react": "^18.0.26",
     "cross-env": "^7.0.3",
-    "typescript": "^4.6.2"
+    "typescript": "^4.9.4"
   }
 }
