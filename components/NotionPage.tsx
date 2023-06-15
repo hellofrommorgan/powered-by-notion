@@ -18,6 +18,10 @@ const Tweet = ({ id }: { id: string }) => {
   return <TweetEmbed tweetId={id} />;
 };
 
+const Code = dynamic(() =>
+  import('react-notion-x/build/third-party/code').then((m) => m.Code)
+);
+
 export const NotionPage = ({
   recordMap: notionRecordMap,
   previewImagesEnabled,
